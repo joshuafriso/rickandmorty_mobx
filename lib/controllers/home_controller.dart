@@ -14,9 +14,6 @@ abstract class _HomeBase with Store {
   @observable
   ObservableList itens = ObservableList.of([]);
 
-  @computed
-  bool get loading => response.status == FutureStatus.pending;
-
   @action
   void getData() {
     response = _api.getData().asObservable()

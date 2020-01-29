@@ -9,12 +9,6 @@ part of 'home_controller.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$HomeController on _HomeBase, Store {
-  Computed<bool> _$loadingComputed;
-
-  @override
-  bool get loading =>
-      (_$loadingComputed ??= Computed<bool>(() => super.loading)).value;
-
   final _$responseAtom = Atom(name: '_HomeBase.response');
 
   @override
